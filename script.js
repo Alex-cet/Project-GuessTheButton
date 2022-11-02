@@ -9,9 +9,9 @@ function startGame() {
 		document.getElementById("buttonContainer").appendChild(btn);
 		btn.addEventListener('click', function() {
 			if (btn.id == randomButton) {
-				alert("You got it! You're the lucky one!");
+				document.getElementById("verifyingButtonMessage").innerHTML = ("You got it! You're the lucky one!");
 			} else {
-				alert("Nope! That's not the lucky button!");
+				document.getElementById("verifyingButtonMessage").innerHTML = ("Nope! That's not the lucky button!");
 			}
 			resetGame();
 		}) 
