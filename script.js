@@ -1,8 +1,8 @@
-function myFunction() {
-	var numberButtons = document.getElementById("numberOfButtons").value;
-	var randomButton = [Math.floor(Math.random() * numberButtons)];
-	for (i = 0; i < numberButtons; i++) {
-		var btn = document.createElement("button");
+function startGame() {
+	let numberButtons = document.getElementById("numberOfButtons").value;
+	let randomButton = [Math.floor(Math.random() * numberButtons)];
+	for (i = 0; i < numberButtons; ++i) {
+		let btn = document.createElement("button");
 		btn.innerHTML = "Try me!";
 		btn.className = "btn";
 		btn.id = i;
